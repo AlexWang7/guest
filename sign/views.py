@@ -47,7 +47,7 @@ def guest_manage(request):
     return render(request, "sign/guest_manage.html", {"user": user_name,
                                                       "guests": contacts})
 
-@login_required
+#@login_required
 def event_guest_manage(request):
     user_name = request.session.get('user_name', "")
     contacts = []
